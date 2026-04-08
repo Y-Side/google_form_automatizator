@@ -40,7 +40,7 @@ pip install selenium webdriver-manager
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Y-Side/google_form_automatizator
    cd <repo-folder>
    ```
 
@@ -53,9 +53,9 @@ pip install selenium webdriver-manager
 3. **Configure the script**
 
    Open `form_filler.py` and edit the configuration block at the top:
-
+   
    ```python
-   FORM_URL      = "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+   FORM_URL      = "https://docs.google.com/forms/d/e/1FAIpQLScYOZ0Zliwr61jRtkBRZE4krNZs0CqyejsXefGE9m9nU102mA/viewform"
    NUM_RESPONSES = 20    # Number of times to submit the form
    MIN_DELAY     = 1.0   # Minimum seconds between clicks
    MAX_DELAY     = 3.0   # Maximum seconds between clicks
@@ -63,7 +63,7 @@ pip install selenium webdriver-manager
    THINK_MAX     = 5.0   # Maximum pause before submitting
    ```
 
-4. **Run the script**
+5. **Run the script**
 
    ```bash
    python form_filler.py
